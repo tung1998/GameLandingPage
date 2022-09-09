@@ -1,18 +1,21 @@
 <template>
-  <section id="playnow" class="dg-banner dg-preload-background ag-sparkS">
-    <custom-fire-animate />
-    <img class="dg-banner-main" src="~/assets/images/background/banner.jpg" alt="banner" style="display: block;">
-    <img class="dg-banner-comming-soon" src="~/assets/images/decor/comingsoon.png" alt="banner">
-    <div v-if="isShowPlatform" class="dragonwar-info-container" style="background: url(&quot;https://dragonwar.io/assets/images/platform_bg.png&quot;) 0% 0% / 100% 100%;">
-      <div style="display: table; margin: 0px auto;">
-        <div class="dg-platform-container">
-          <div class="platform-item">
-            <a href="#"><img class="platform-icon" src="~/assets/images/icon/platform_web.png" alt="platform of dragonwar"></a><p>{{ $t('Play on Web') }}</p>
-          </div><div class="platform-item">
-            <a href="#"><img class="platform-icon" src="~/assets/images/icon/platform_android.png" alt="platform of dragonwar"></a><p>{{ $t('Play on Android') }}</p>
-          </div><div class="platform-item">
-            <a href="#"><img class="platform-icon" src="~/assets/images/icon/platform_ios.png" alt="platform of dragonwar"></a><p>{{ $t('Play on IOS') }}</p>
-          </div>
+  <section class="dg-describe text-align-center">
+    <img src="~/assets/images/decor/sectionseparate.png" class="section-separator" alt="separator">
+    <div class="dg-game-describe-warper" style="margin: auto 1.2vw;">
+      <h2>The best Turn based Strategy Game on The Fastest Blockchain</h2>
+      <img src="~/assets/images/decor/section-title-border.png" alt="dg-separator-image" style="display: inline">
+      <div class="screenshot-frame" :style="`background-image: url(${require('~/assets/images/decor/boxframe2.png')});`">
+        <div classname="screenshot-container">
+          <iframe
+            style="max-width: 100%"
+            width="700"
+            height="410"
+            src="https://www.youtube.com/embed/R0w8V5S52d4"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+            data-gtm-yt-inspected-2="true"
+          />
         </div>
       </div>
     </div>

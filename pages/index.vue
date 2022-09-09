@@ -4,6 +4,7 @@
     <home-page-header-mobile />
     <home-section-banner />
     <home-section-describe />
+    <home-section-character />
     <home-page-footer />
   </div>
 </template>

@@ -3,7 +3,7 @@
     <custom-fire-animate />
     <img class="dg-banner-main" src="~/assets/images/background/banner.jpg" alt="banner" style="display: block;">
     <img class="dg-banner-comming-soon" src="~/assets/images/decor/comingsoon.png" alt="banner">
-    <div v-if="isShowPlatform" class="dragonwar-info-container" style="background: url(&quot;https://dragonwar.io/assets/images/platform_bg.png&quot;) 0% 0% / 100% 100%;">
+    <div v-if="isShowPlatform" class="dragonwar-info-container" :style="`background: url(${require('~/assets/images/background/platform_bg.png')}) 0% 0% / 100% 100%;`">
       <div style="display: table; margin: 0px auto;">
         <div class="dg-platform-container">
           <div class="platform-item">
