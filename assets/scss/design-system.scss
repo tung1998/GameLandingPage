@@ -1,0 +1,42 @@
+$primary: #f24333;
+$secondary: #5e00ce;
+$sub1: #1287fd;
+$sub2: #fa336c;
+$success: #2ad7de;
+$dark: #3901d9;
+$text: #f28888;
+$subtleText: #edd83d;
+$accent: #ecf1f4;
+$light: #fafcfe;
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'sub1': $sub1,
+    'sub2': $sub2,
+    'success': $success,
+    'dark': $dark,
+    'text': $text,
+    'subtleText': $subtleText,
+    'accent': $accent,
+    'light': $light
+  ),
+  $theme-colors
+);
+
+@each $color, $value in $theme-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}
