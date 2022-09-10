@@ -138,47 +138,7 @@
 export default {
   data () {
     return {
-      dragonsList: [{
-        name: 'Earth',
-        type: 'Tanker',
-        modelUrl: 'earth.gif',
-        avatarUrl: 'earthavatar.png',
-        roleIconUrl: 'role_earth.png',
-        backgroundUrl: 'background_earth.png',
-        elementalUrl: 'element_earth.png'
-      }, {
-        name: 'Fire',
-        type: 'Warrior',
-        modelUrl: 'fire.gif',
-        avatarUrl: 'fireavatar.png',
-        roleIconUrl: 'role_earth.png',
-        backgroundUrl: 'background_fire.png',
-        elementalUrl: 'element_fire.png'
-      }, {
-        name: 'Water',
-        type: 'Ranger',
-        modelUrl: 'water.gif',
-        avatarUrl: 'wateravatar.png',
-        roleIconUrl: 'role_water.png',
-        backgroundUrl: 'background_water.png',
-        elementalUrl: 'element_water.png'
-      }, {
-        name: 'Grass',
-        type: 'Support/Healer',
-        modelUrl: 'grass.gif',
-        avatarUrl: 'grassavatar.png',
-        roleIconUrl: 'role_grass.png',
-        backgroundUrl: 'background_grass.png',
-        elementalUrl: 'element_grass.png'
-      }, {
-        name: 'Thunder',
-        type: 'Mage',
-        modelUrl: 'thunder.gif',
-        avatarUrl: 'thunderavatar.png',
-        roleIconUrl: 'role_thunder.png',
-        backgroundUrl: 'background_thunder.png',
-        elementalUrl: 'element_thunder.png'
-      }],
+      dragonsList: this.$dragonsList,
       currentDragonIndex: 0
     }
   },
