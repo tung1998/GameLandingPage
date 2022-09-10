@@ -5,6 +5,7 @@
     <home-section-banner />
     <home-section-describe />
     <home-section-character />
+    <home-section-dragon />
     <home-page-footer />
   </div>
 </template>
